@@ -8,6 +8,31 @@ html {
 
 body {
     min-height: 100dvh;
-    background: #FEFEFE;
+    /* background: #FFFFF0; */
+    background: #0E0E10;
     font-family: Poppins;
+}
+.grad-to-b {
+    background: linear-gradient(to bottom right, #6294c3, #3a4e6e);
+}
+.h11 {
+    font-size: clamp(3.05rem, 2.59vi + 2.4rem, 5rem);
+}
+h1 {
+    font-size: clamp(2.44rem, 1.74vi + 2.01rem, 3.75rem);
+}
+h2 {
+    font-size: clamp(1.95rem, 1.15vi + 1.67rem, 2.81rem);
+}
+h3 {
+    font-size: clamp(1.56rem, 0.73vi + 1.38rem, 2.11rem);
+}
+h4 {
+    font-size: clamp(1.25rem, 0.44vi + 1.14rem, 1.58rem);
+}
+h5 {
+    font-size: clamp(1rem, 0.25vi + 0.94rem, 1.19rem);
+}
+h6 {
+    font-size: clamp(0.8rem, 0.12vi + 0.77rem, 0.89rem);
 }

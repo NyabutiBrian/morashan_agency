@@ -7,17 +7,18 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <nav>
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-gray text-white">
             <!-- start -->
             <div class="navbar-start">
+              <!-- drop down mobile menu -->
               <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <div tabindex="0" role="button" aria-label="dropdown button" class="btn btn-ghost lg:hidden">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-5 w-5"
@@ -33,13 +34,15 @@
                 </div>
                 <ul
                   tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Item 1</a></li>
-                  <li><a>Item 2</a></li>
-                  <li><a>Item 3</a></li>
+                  class="menu menu-md dropdown-content bg-gray rounded-box z-[1] mt-3 w-52 p-2">
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li><a href="#">Item 3</a></li>
                 </ul>
               </div>
-              <a class="btn btn-ghost text-xl">Moreashan</a>
+
+              <!-- logo -->
+              <a href="#" class="btn btn-ghost text-xl">Moreashan</a>
             </div>
 
             <!-- center -->
@@ -53,59 +56,101 @@
 
             <!-- end -->
             <div class="navbar-end">
-                <div class="dropdown dropdown-end">
-                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                      <div class="indicator">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor">
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                        </svg>
-                        <span class="badge badge-sm indicator-item">8</span>
-                      </div>
-                    </div>
-                    <div
-                      tabindex="0"
-                      class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
-                      <div class="card-body">
-                        <span class="text-lg font-bold">8 Items</span>
-                        <span class="text-info">Subtotal: $999</span>
-                        <div class="card-actions">
-                          <button class="btn btn-primary btn-block">View cart</button>
-                        </div>
-                      </div>
-                    </div>
+              <!-- cart -->
+              <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" aria-label="cart button" class="btn btn-ghost btn-circle">
+                  <div class="indicator">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    <span class="badge badge-sm indicator-item grad-to-b text-white">8</span>
+                  </div>
                 </div>
-                <div class="dropdown dropdown-end">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                <!-- cart dropdown -->
+                <div
+                  tabindex="0"
+                  class="card card-compact dropdown-content bg-gray z-[1] mt-3 w-52">
+                  <div class="card-body">
+                    <span class="text-lg font-bold">8 Items</span>
+                    <span class="text-danube-300">Subtotal: $999</span>
+                    <div class="card-actions">
+                      <button class="btn grad-to-b text-danube-200 hover:text-white btn-block">View cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- admin -->
+              <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" aria-label="cart button" class="btn btn-ghost btn-circle avatar">
                     <div class="w-10 rounded-full">
                     <img
-                        alt="Tailwind CSS Navbar component"
+                        alt="Administartor Display Photo"
                         src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
                     </div>
                 </div>
                 <ul
                     tabindex="0"
-                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    class="menu menu-md dropdown-content bg-gray rounded-box z-[1] mt-3 w-52 p-2">
                     <li>
-                    <a class="justify-between">
+                    <a href="#" class="justify-between">
                         Profile
                         <span class="badge">New</span>
                     </a>
                     </li>
-                    <li><a>Settings</a></li>
-                    <li><a>Logout</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
                 </ul>
-                </div>
+              </div>
             </div>
         </div>
     </nav>
+
+    <!-- <div class="text-white">
+      <h1 class="h11 font-Archivo">Morashan - E-commerce Website</h1>
+      <h1>Morashan - E-commerce Website</h1>
+      <h2>Morashan - E-commerce Website</h2>
+      <h3>Morashan - E-commerce Website</h3>
+      <h4>Morashan - E-commerce Website</h4>
+      <h5>Morashan - E-commerce Website</h5>
+      <h6>Morashan - E-commerce Website</h6>
+      <p>Morashan - E-commerce Website</p>
+    </div>
+
+    <div class="text-white flex space-x-2">
+      <div class="p-12 bg-primary">Primary</div>
+      <div class="p-12 bg-white text-dark">White</div>
+      <div class="p-12 bg-gray border border-danube-950">Gray</div>
+      <div class="p-12 bg-dark">Dark</div>
+      <div class="p-12 bg-gray border border-danube-950">
+        <div class="p-12 bg-dark">Dark</div>
+      </div>
+      <div class="p-12 bg-danube-500">bg-danube-500</div>
+      <div class="p-12 bg-danube-800">bg-danube-800</div>
+    </div>
+
+    <div class="m-4">
+      <button class="py-3 px-12 rounded-xl text-white grad-to-b">Active</button>
+    </div>
+
+    <div class="text-white">
+      <h1 class="h11 font-Archivo">Morashan - E-commerce Website</h1>
+      <h1>Morashan - E-commerce Website</h1>
+      <h2>Morashan - E-commerce Website</h2>
+      <h3>Morashan - E-commerce Website</h3>
+      <h4>Morashan - E-commerce Website</h4>
+      <h5>Morashan - E-commerce Website</h5>
+      <h6>Morashan - E-commerce Website</h6>
+      <p>Morashan - E-commerce Website</p>
+    </div> -->
 </body>
 </html>
