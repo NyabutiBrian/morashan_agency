@@ -9,11 +9,18 @@ html {
 body {
     min-height: 100dvh;
     /* background: #FFFFF0; */
-    background: #0E0E10;
+    background: #F3F8FB;
     font-family: Poppins;
+    color: #0E0E10;
 }
 .grad-to-b {
+    background: linear-gradient(to bottom, #6294c3, #3a4e6e);
+}
+.grad-to-br {
     background: linear-gradient(to bottom right, #6294c3, #3a4e6e);
+}
+.grad-to-tl {
+    background: linear-gradient(to top left, #6294c3, #3a4e6e);
 }
 .h11 {
     font-size: clamp(3.05rem, 2.59vi + 2.4rem, 5rem);

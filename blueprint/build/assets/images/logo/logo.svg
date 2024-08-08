@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 161.36 62.62">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-5 {
+        fill: #f3f8fb;
+        font-family: Avigea, Avigea;
+        font-size: 22.48px;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="39.07" y1="42.53" x2="97.52" y2="33.25" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6294c3"/>
+      <stop offset="1" stop-color="#3a4e6e"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="1.93" y1="34.21" x2="101.31" y2="28.26" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <path class="cls-1" d="M161.36,0c0,33.07-25.63,60.15-58.11,62.46-1.49.11-2.99.16-4.51.16h-38.54c-.7-.03-1.4-.06-2.09-.12.04-19.29,8.79-36.54,22.54-48C91.51,5.45,105.49,0,120.73,0h40.63Z"/>
+    <path class="cls-2" d="M103.25,62.44c-1.49.11-2.99.16-4.51.16h-38.54c-.7-.03-1.4-.06-2.09-.12C25.63,60.17,0,33.09,0,.02h40.63c15.22,0,29.17,5.43,40.02,14.46,13.76,11.44,22.54,28.67,22.6,47.96Z"/>
+    <text class="cls-5" transform="translate(78.86 37.75)"><tspan x="0" y="0">a</tspan><tspan class="cls-4" x="12.03" y="0">s</tspan><tspan x="22.39" y="0">han</tspan></text>
+    <text class="cls-5" transform="translate(24.56 37.75)"><tspan x="0" y="0">M</tspan><tspan class="cls-3" x="19.4" y="0">o</tspan><tspan x="31.9" y="0">re</tspan></text>
+  </g>
+</svg>
